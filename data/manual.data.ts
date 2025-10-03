@@ -1,0 +1,151 @@
+import { RootItem } from '.'
+
+export const manualMaintainedData: RootItem[] = [
+  {
+    name: '乌龙茶选课社区',
+    url: 'https://1.tongji.icu/',
+  },
+  {
+    name: '乌龙茶网址导航',
+    url: 'https://tongji.icu/',
+  },
+  {
+    name: '舟济社区',
+    url: 'https://home.tongji.icu/',
+    alias: '舟济论坛',
+  },
+  {
+    name: '一块钱',
+    url: 'https://flowerblackg.github.io/onetj-webapp',
+    alias: 'onetj',
+  },
+  {
+    name: 'TJ 一起走',
+    url: 'https://pinche.tj.hainuo.wang/',
+    alias: '同济一起走 拼车 搭车',
+  },
+  {
+    name: 'Canvas',
+    url: 'http://canvas.tongji.edu.cn/',
+  },
+  {
+    name: '创新创业平台',
+    url: 'https://cxcy.tongji.edu.cn/',
+    alias: '大创 大学生创新训练计划管理系统',
+  },
+  {
+    name: '同济大学移动门户',
+    url: 'https://all4u.tongji.edu.cn/tj-portal/page/mobile',
+    alias: '同心云 小程序',
+  },
+  {
+    name: '宿舍购电',
+    url: 'http://goudian.tongji.edu.cn/',
+  },
+  {
+    name: 'AI 创新平台',
+    url: 'http://agent.tongji.edu.cn/',
+  },
+
+  {
+    name: '同济邮箱',
+    url: 'https://mail.tongji.edu.cn/',
+  },
+  {
+    name: '智慧教学媒体',
+    url: 'https://look.tongji.edu.cn',
+    alias: '录课 录播',
+  },
+  {
+    name: '云媒体平台 (旧)',
+    url: 'http://v.tongji.edu.cn',
+    alias: '录课 录播',
+  },
+  {
+    name: '物理实验中心',
+    url: 'http://phyvr.tongji.edu.cn',
+  },
+  {
+    name: '第二课堂活动平台',
+    url: 'https://itongjis.tongji.edu.cn/',
+    alias: 'itongjis itongji-s',
+  },
+  {
+    name: '图书馆',
+    url: 'http://www.lib.tongji.edu.cn/',
+  },
+  {
+    name: '同济云盘',
+    url: 'https://yunpan.tongji.edu.cn/',
+    alias: '网盘',
+  },
+  {
+    name: '同济后勤',
+    url: 'https://tjhq.tongji.edu.cn',
+    children: [
+      {
+        name: '服务指南',
+        url: 'https://tjhq.tongji.edu.cn/news.html?typeId=11',
+        children: [
+          {
+            name: '餐饮服务',
+            url: 'https://tjhq.tongji.edu.cn/news_detail.html?id=e0c573a602b3497084460d1d110233f9',
+            alias: '食堂',
+          },
+          {
+            name: '物业服务',
+            url: 'https://tjhq.tongji.edu.cn/news_detail.html?id=3f5451f16910429580a80f0f3499c58a',
+          },
+          {
+            name: '学生社区中心服务',
+            url: 'https://tjhq.tongji.edu.cn/news_detail.html?id=38991097faf140c99d862ec080fb1b18',
+          },
+          {
+            name: '会务服务',
+            url: 'https://tjhq.tongji.edu.cn/news_detail.html?id=20d14051e7a7426e8bd8916bea43c3ba',
+            alias: '会议',
+          },
+        ],
+      },
+      {
+        name: '服务应用',
+        url: 'https://tjhq.tongji.edu.cn/ihome/search',
+        children: [
+          { name: '我要报修', url: 'https://tjhq.tongji.edu.cn/ihome/newRepair' },
+          { name: '建议投诉', url: 'https://tjhq.tongji.edu.cn/ihome/service/catalogue' },
+        ],
+      },
+    ],
+  },
+  {
+    name: '勤工助学',
+    url: 'http://myportal.tongji.edu.cn/xsfwdt/sys/qgzxapp/*default/index.do',
+    alias: '勤工俭学',
+  },
+  {
+    name: '体育场馆预约',
+    url: 'https://stadium.tongji.edu.cn/',
+    alias: '球场 健身房',
+  },
+  { name: '高数同步课堂', url: 'https://gaoshutongbu.tongji.edu.cn/', alias: '数学' },
+  {
+    name: '缴费平台',
+    url: 'https://paycwc.tongji.edu.cn/payment',
+    alias: '财务',
+  },
+  { name: '校园一卡通', url: 'https://yikatong.tongji.edu.cn/' },
+  { name: '开发者平台', url: 'https://dev.tongji.edu.cn/' },
+  { name: '校内 GitLab', url: 'https://git.tongji.edu.cn/' },
+  {
+    name: '印象同济',
+    url: 'https://photo.tongji.edu.cn/',
+    alias: '素材库 图集 图库 宣传',
+    children: [
+      { name: '专题', url: 'https://photo.tongji.edu.cn/zt.htm' },
+      { name: '图片', url: 'https://photo.tongji.edu.cn/tp.htm' },
+      { name: '视频', url: 'https://photo.tongji.edu.cn/sp.htm' },
+      { name: '声音', url: 'https://photo.tongji.edu.cn/sy.htm', alias: '广播台 同广要闻' },
+      { name: '校报', url: 'https://photo.tongji.edu.cn/xb.htm', alias: '同济报 校刊' },
+    ],
+  },
+]
