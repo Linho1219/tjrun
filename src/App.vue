@@ -68,7 +68,7 @@ watch(selectedIndex, () => {
         <v-text-field
           class="search-input"
           variant="outlined"
-          placeholder="输入以搜索"
+          placeholder="键入以开始搜索"
           v-model="input"
           hide-details="auto"
           clearable
@@ -78,7 +78,7 @@ watch(selectedIndex, () => {
           @blur="onBlur"
         ></v-text-field>
       </div>
-      <ul id="result-list">
+      <ul id="result-list" :class="{ folded: !input }">
         <li
           v-for="(result, index) in results"
           :key="result.item.pathLabel + result.item.name"
@@ -119,6 +119,14 @@ watch(selectedIndex, () => {
           </a>
         </li>
       </ul>
+      <div id="about">
+        <a href="https://github.com/Linho1219/tjrun" target="_blank" rel="noopener noreferrer">
+          <v-btn variant="text" size="small"> Github </v-btn>
+        </a>
+        <a href="https://linho.cc/" target="_blank" rel="noopener noreferrer">
+          <v-btn variant="text" size="small"> About Me </v-btn>
+        </a>
+      </div>
     </main>
   </v-app>
 </template>
@@ -130,6 +138,7 @@ main {
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   height: 100vh;
   overflow: hidden;
 }
@@ -146,18 +155,21 @@ main {
   height: 0;
   flex: 1;
   overflow: auto;
-  margin: 0 0 1rem 0;
   padding: 0;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  transition: flex 0.2s;
+  &.folded {
+    flex: 0;
+  }
 }
 .result-item {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.result-link {
+a {
   text-decoration: none;
   color: inherit;
   outline: none !important;
@@ -230,5 +242,11 @@ main {
   color: rgb(var(--v-theme-on-primary)) !important;
   box-shadow: 0 0 0 0.1rem rgba(var(--v-theme-primary), 0.8);
   border-radius: 0.1rem;
+}
+#about {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0.5rem 0;
 }
 </style>
