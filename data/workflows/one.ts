@@ -1,5 +1,5 @@
 import type { TreeItem } from '..'
-import { Page } from 'playwright'
+import type { Page } from 'playwright'
 import { sleep } from '../utils'
 
 namespace One {

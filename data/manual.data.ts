@@ -1,4 +1,4 @@
-import { RootItem } from '.'
+import type { RootItem } from '.'
 
 export const manualMaintainedData: RootItem[] = [
   {

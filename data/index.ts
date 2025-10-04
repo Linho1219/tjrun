@@ -1,6 +1,6 @@
 import 'dotenv/config'
 import fs from 'fs/promises'
-import { chromium, Page } from 'playwright'
+import { chromium, type Page } from 'playwright'
 import { manualMaintainedData } from './manual.data'
 import { fetchOneData } from './workflows/one'
 import { fetchAllData } from './workflows/all'
@@ -50,18 +50,6 @@ export async function fetchData(workflows: ((page: Page) => Promise<RootItem>)[]
   }
   await browser.close()
   return results
-}
-
-export interface FlattenedItem {
-  name: string
-  url: string
-  path: {
-    name: string
-    url?: string
-  }[]
-  pathLabel: string
-  description?: string
-  alias?: string
 }
 
 function flatten(root: TreeItem) {

@@ -1,5 +1,5 @@
-import { Page } from 'playwright'
-import { RootItem, TreeItem } from '..'
+import type { Page } from 'playwright'
+import type { RootItem, TreeItem } from '..'
 import { sleep } from '../utils'
 
 export async function fetchNicData(page: Page): Promise<RootItem> {

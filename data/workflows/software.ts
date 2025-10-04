@@ -1,5 +1,5 @@
-import { Page } from 'playwright'
-import { RootItem } from '..'
+import type { Page } from 'playwright'
+import type { RootItem } from '..'
 import { sleep } from '../utils'
 
 const urlBase = 'https://software.tongji.edu.cn/product.html?id='
