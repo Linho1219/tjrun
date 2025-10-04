@@ -1,112 +1,112 @@
 [
   {
-    "name": "1 系统",
+    "name": "教学管理信息系统",
     "url": "https://1.tongji.edu.cn",
     "path": [],
     "pathLabel": "",
-    "description": "同济大学教学管理信息系统"
+    "alias": "1系统 一系统"
   },
   {
     "name": "帮助中心",
     "url": "https://1.tongji.edu.cn/helpCenter",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "消息通知"
       }
     ],
-    "pathLabel": "1 系统 - 消息通知"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 消息通知"
   },
   {
     "name": "消息中心（新）",
     "url": "https://1.tongji.edu.cn/MessageCenterNew",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "消息通知"
       }
     ],
-    "pathLabel": "1 系统 - 消息通知"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 消息通知"
   },
   {
     "name": "我的申请",
     "url": "https://1.tongji.edu.cn/StudentRollCheck",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "消息通知"
       }
     ],
-    "pathLabel": "1 系统 - 消息通知"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 消息通知"
   },
   {
     "name": "通知公告",
     "url": "https://1.tongji.edu.cn/myAnnouncement",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "消息通知"
       }
     ],
-    "pathLabel": "1 系统 - 消息通知"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 消息通知"
   },
   {
     "name": "校历",
     "url": "https://1.tongji.edu.cn/schoolCalendars",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "消息通知"
       }
     ],
-    "pathLabel": "1 系统 - 消息通知"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 消息通知"
   },
   {
     "name": "下载历史",
     "url": "https://1.tongji.edu.cn/systemMessage",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "消息通知"
       }
     ],
-    "pathLabel": "1 系统 - 消息通知"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 消息通知"
   },
   {
     "name": "工作台",
     "url": "https://1.tongji.edu.cn/workbench",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       }
     ],
-    "pathLabel": "1 系统"
+    "pathLabel": "教学管理信息系统 (1系统 一系统)"
   },
   {
     "name": "切换账号",
     "url": "https://1.tongji.edu.cn/mock",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
@@ -114,14 +114,14 @@
         "url": "https://1.tongji.edu.cn/workbench"
       }
     ],
-    "pathLabel": "1 系统 - 工作台"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 工作台"
   },
   {
     "name": "迎新",
     "url": "https://1.tongji.edu.cn/welcome",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
@@ -129,56 +129,56 @@
         "url": "https://1.tongji.edu.cn/workbench"
       }
     ],
-    "pathLabel": "1 系统 - 工作台"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 工作台"
   },
   {
     "name": "教室使用情况报表",
     "url": "https://1.tongji.edu.cn/classroomUsageReport",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "资源管理"
       }
     ],
-    "pathLabel": "1 系统 - 资源管理"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 资源管理"
   },
   {
     "name": "我的信息",
     "url": "https://1.tongji.edu.cn/StudentBaseInfo",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "我的学籍"
       }
     ],
-    "pathLabel": "1 系统 - 我的学籍"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 我的学籍"
   },
   {
     "name": "申请学籍异动",
     "url": "https://1.tongji.edu.cn/abnormalManage",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "我的学籍"
       }
     ],
-    "pathLabel": "1 系统 - 我的学籍"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 我的学籍"
   },
   {
     "name": "异动申请",
     "url": "https://1.tongji.edu.cn/moveToApply",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
@@ -189,14 +189,14 @@
         "url": "https://1.tongji.edu.cn/abnormalManage"
       }
     ],
-    "pathLabel": "1 系统 - 我的学籍 - 申请学籍异动"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 我的学籍 - 申请学籍异动"
   },
   {
     "name": "异动查看",
     "url": "https://1.tongji.edu.cn/abnormalView",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
@@ -207,14 +207,14 @@
         "url": "https://1.tongji.edu.cn/abnormalManage"
       }
     ],
-    "pathLabel": "1 系统 - 我的学籍 - 申请学籍异动"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 我的学籍 - 申请学籍异动"
   },
   {
     "name": "异动编辑",
     "url": "https://1.tongji.edu.cn/moveToApply",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
@@ -225,434 +225,434 @@
         "url": "https://1.tongji.edu.cn/abnormalManage"
       }
     ],
-    "pathLabel": "1 系统 - 我的学籍 - 申请学籍异动"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 我的学籍 - 申请学籍异动"
   },
   {
     "name": "下载学籍模板文件",
     "url": "https://1.tongji.edu.cn/modelFilesManage",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "我的学籍"
       }
     ],
-    "pathLabel": "1 系统 - 我的学籍"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 我的学籍"
   },
   {
     "name": "补办学生证",
     "url": "https://1.tongji.edu.cn/xszbb",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "我的学籍"
       }
     ],
-    "pathLabel": "1 系统 - 我的学籍"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 我的学籍"
   },
   {
     "name": "志愿填报",
     "url": "https://1.tongji.edu.cn/volunteerFilling",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "主修专业确认"
       }
     ],
-    "pathLabel": "1 系统 - 主修专业确认"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 主修专业确认"
   },
   {
     "name": "录取状态查询",
     "url": "https://1.tongji.edu.cn/enrollStatusQuery",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "主修专业确认"
       }
     ],
-    "pathLabel": "1 系统 - 主修专业确认"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 主修专业确认"
   },
   {
     "name": "类内面试考核安排查询",
     "url": "https://1.tongji.edu.cn/InterviewArrangeQuery",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "主修专业确认"
       }
     ],
-    "pathLabel": "1 系统 - 主修专业确认"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 主修专业确认"
   },
   {
     "name": "类内特色评测考核安排查询",
     "url": "https://1.tongji.edu.cn/featureArrangeQuery",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "主修专业确认"
       }
     ],
-    "pathLabel": "1 系统 - 主修专业确认"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 主修专业确认"
   },
   {
     "name": "类内综合成绩排名",
     "url": "https://1.tongji.edu.cn/interResultRankingNew",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "主修专业确认"
       }
     ],
-    "pathLabel": "1 系统 - 主修专业确认"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 主修专业确认"
   },
   {
     "name": "跨类面试考核安排查询",
     "url": "https://1.tongji.edu.cn/CrossInterviewArrangeQuery",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "主修专业确认"
       }
     ],
-    "pathLabel": "1 系统 - 主修专业确认"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 主修专业确认"
   },
   {
     "name": "跨类特色评测考核安排查询",
     "url": "https://1.tongji.edu.cn/crossFeatureArrangeQuery",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "主修专业确认"
       }
     ],
-    "pathLabel": "1 系统 - 主修专业确认"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 主修专业确认"
   },
   {
     "name": "跨类录取确认",
     "url": "https://1.tongji.edu.cn/EnrollConfirm",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "主修专业确认"
       }
     ],
-    "pathLabel": "1 系统 - 主修专业确认"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 主修专业确认"
   },
   {
     "name": "我的培养方案",
     "url": "https://1.tongji.edu.cn/myBclCultureScheme",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "我的培养"
       }
     ],
-    "pathLabel": "1 系统 - 我的培养"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 我的培养"
   },
   {
     "name": "我的培养计划",
     "url": "https://1.tongji.edu.cn/traningPlanMy",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "我的培养"
       }
     ],
-    "pathLabel": "1 系统 - 我的培养"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 我的培养"
   },
   {
     "name": "个人选课",
     "url": "https://1.tongji.edu.cn/studentElect",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "我的选课"
       }
     ],
-    "pathLabel": "1 系统 - 我的选课"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 我的选课"
   },
   {
     "name": "本研互选选课",
     "url": "https://1.tongji.edu.cn/BkElcMutualStudentElection",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "我的选课"
       }
     ],
-    "pathLabel": "1 系统 - 我的选课"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 我的选课"
   },
   {
     "name": "个人课表",
     "url": "https://1.tongji.edu.cn/GraduateStudentTimeTable",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "我的选课"
       }
     ],
-    "pathLabel": "1 系统 - 我的选课"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 我的选课"
   },
   {
     "name": "专业课表",
     "url": "https://1.tongji.edu.cn/StudentMajorTimeTable",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "我的选课"
       }
     ],
-    "pathLabel": "1 系统 - 我的选课"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 我的选课"
   },
   {
     "name": "全校课表",
     "url": "https://1.tongji.edu.cn/taskResultQuery",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "我的选课"
       }
     ],
-    "pathLabel": "1 系统 - 我的选课"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 我的选课"
   },
   {
     "name": "教学进度查询",
     "url": "https://1.tongji.edu.cn/auditProgressList",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "我的选课"
       }
     ],
-    "pathLabel": "1 系统 - 我的选课"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 我的选课"
   },
   {
     "name": "重修缴费",
     "url": "https://1.tongji.edu.cn/RetakeStuPay",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "我的选课"
       }
     ],
-    "pathLabel": "1 系统 - 我的选课"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 我的选课"
   },
   {
     "name": "期中退课",
     "url": "https://1.tongji.edu.cn/MidTermWithdrawalCourses",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "我的选课"
       }
     ],
-    "pathLabel": "1 系统 - 我的选课"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 我的选课"
   },
   {
     "name": "申请跨学科选课",
     "url": "https://1.tongji.edu.cn/CroElcMutualApply",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "我的选课"
       }
     ],
-    "pathLabel": "1 系统 - 我的选课"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 我的选课"
   },
   {
     "name": "申请本研互选",
     "url": "https://1.tongji.edu.cn/BkElcMutualApply",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "我的选课"
       }
     ],
-    "pathLabel": "1 系统 - 我的选课"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 我的选课"
   },
   {
     "name": "我的考试",
     "url": "https://1.tongji.edu.cn/StuExamEnquiries",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "我的考试"
       }
     ],
-    "pathLabel": "1 系统 - 我的考试"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 我的考试"
   },
   {
     "name": "申请重考",
     "url": "https://1.tongji.edu.cn/applyMakeupExam",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "我的考试"
       }
     ],
-    "pathLabel": "1 系统 - 我的考试"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 我的考试"
   },
   {
     "name": "申请免修免听",
     "url": "https://1.tongji.edu.cn/EXLApplication",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "我的成绩"
       }
     ],
-    "pathLabel": "1 系统 - 我的成绩"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 我的成绩"
   },
   {
     "name": "选课网我的成绩",
     "url": "https://1.tongji.edu.cn/oldStysteMyGrades",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "我的成绩"
       }
     ],
-    "pathLabel": "1 系统 - 我的成绩"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 我的成绩"
   },
   {
     "name": "申请校内学分认定",
     "url": "https://1.tongji.edu.cn/InSchoolCreditApplication",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "我的成绩"
       }
     ],
-    "pathLabel": "1 系统 - 我的成绩"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 我的成绩"
   },
   {
     "name": "申请校外学分认定",
     "url": "https://1.tongji.edu.cn/offCampusCreditApplication",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "我的成绩"
       }
     ],
-    "pathLabel": "1 系统 - 我的成绩"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 我的成绩"
   },
   {
     "name": "我的迎新任务",
     "url": "https://1.tongji.edu.cn/welcome",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "迎新"
       }
     ],
-    "pathLabel": "1 系统 - 迎新"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 迎新"
   },
   {
     "name": "我的入学考试信息",
     "url": "https://1.tongji.edu.cn/myExam",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "迎新"
       }
     ],
-    "pathLabel": "1 系统 - 迎新"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 迎新"
   },
   {
     "name": "新生见面会",
     "url": "https://1.tongji.edu.cn/schoolTutorMeeting",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
@@ -662,14 +662,14 @@
         "name": "新生导师"
       }
     ],
-    "pathLabel": "1 系统 - 我的导师 - 新生导师"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 我的导师 - 新生导师"
   },
   {
     "name": "我的导师",
     "url": "https://1.tongji.edu.cn/mySchoolTutor",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
@@ -679,14 +679,14 @@
         "name": "新生导师"
       }
     ],
-    "pathLabel": "1 系统 - 我的导师 - 新生导师"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 我的导师 - 新生导师"
   },
   {
     "name": "申请导师",
     "url": "https://1.tongji.edu.cn/schoolTutorApply",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
@@ -696,14 +696,14 @@
         "name": "新生导师"
       }
     ],
-    "pathLabel": "1 系统 - 我的导师 - 新生导师"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 我的导师 - 新生导师"
   },
   {
     "name": "学院导师信息查询",
     "url": "https://1.tongji.edu.cn/collegeTutorMessage",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
@@ -713,14 +713,14 @@
         "name": "学院导师"
       }
     ],
-    "pathLabel": "1 系统 - 我的导师 - 学院导师"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 我的导师 - 学院导师"
   },
   {
     "name": "我的导师",
     "url": "https://1.tongji.edu.cn/myCollegeTutor",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
@@ -730,14 +730,14 @@
         "name": "学院导师"
       }
     ],
-    "pathLabel": "1 系统 - 我的导师 - 学院导师"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 我的导师 - 学院导师"
   },
   {
     "name": "申请导师",
     "url": "https://1.tongji.edu.cn/collegeTutorApply",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
@@ -747,14 +747,14 @@
         "name": "学院导师"
       }
     ],
-    "pathLabel": "1 系统 - 我的导师 - 学院导师"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 我的导师 - 学院导师"
   },
   {
     "name": "互选导师库查询",
     "url": "https://1.tongji.edu.cn/libraryQuery",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
@@ -764,14 +764,14 @@
         "name": "互选导师"
       }
     ],
-    "pathLabel": "1 系统 - 我的导师 - 互选导师"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 我的导师 - 互选导师"
   },
   {
     "name": "申请互选导师",
     "url": "https://1.tongji.edu.cn/mutualApply",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
@@ -781,14 +781,14 @@
         "name": "互选导师"
       }
     ],
-    "pathLabel": "1 系统 - 我的导师 - 互选导师"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 我的导师 - 互选导师"
   },
   {
     "name": "我的互选导师",
     "url": "https://1.tongji.edu.cn/myMutualTutor",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
@@ -798,14 +798,14 @@
         "name": "互选导师"
       }
     ],
-    "pathLabel": "1 系统 - 我的导师 - 互选导师"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 我的导师 - 互选导师"
   },
   {
     "name": "导师指导记录",
     "url": "https://1.tongji.edu.cn/mutualTurorRecord",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
@@ -815,14 +815,14 @@
         "name": "互选导师"
       }
     ],
-    "pathLabel": "1 系统 - 我的导师 - 互选导师"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 我的导师 - 互选导师"
   },
   {
     "name": "(学生新增)导师指导记录",
     "url": "https://1.tongji.edu.cn/tutorGuidMg",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
@@ -832,25 +832,25 @@
         "name": "互选导师"
       }
     ],
-    "pathLabel": "1 系统 - 我的导师 - 互选导师"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 我的导师 - 互选导师"
   },
   {
     "name": "我的语言强化班",
     "url": "https://1.tongji.edu.cn/StrengtheningClass",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       }
     ],
-    "pathLabel": "1 系统"
+    "pathLabel": "教学管理信息系统 (1系统 一系统)"
   },
   {
     "name": "语言强化班报名",
     "url": "https://1.tongji.edu.cn/scStudentRegistration",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
@@ -858,39 +858,39 @@
         "url": "https://1.tongji.edu.cn/StrengtheningClass"
       }
     ],
-    "pathLabel": "1 系统 - 我的语言强化班"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 我的语言强化班"
   },
   {
     "name": "教学大纲查询",
     "url": "https://1.tongji.edu.cn/undergraduateQuery",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "教学大纲"
       }
     ],
-    "pathLabel": "1 系统 - 教学大纲"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 教学大纲"
   },
   {
     "name": "我的实习",
     "url": "https://1.tongji.edu.cn/practiceManagement",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       }
     ],
-    "pathLabel": "1 系统"
+    "pathLabel": "教学管理信息系统 (1系统 一系统)"
   },
   {
     "name": "申请分散实习",
     "url": "https://1.tongji.edu.cn/dispersionPracticeApply",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
@@ -898,14 +898,14 @@
         "url": "https://1.tongji.edu.cn/practiceManagement"
       }
     ],
-    "pathLabel": "1 系统 - 我的实习"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 我的实习"
   },
   {
     "name": "申请实践重修",
     "url": "https://1.tongji.edu.cn/practiceReworkManagement",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
@@ -913,112 +913,112 @@
         "url": "https://1.tongji.edu.cn/practiceManagement"
       }
     ],
-    "pathLabel": "1 系统 - 我的实习"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 我的实习"
   },
   {
     "name": "普通话等级考试报名",
     "url": "https://1.tongji.edu.cn/studentsRegist",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "竞赛及考试"
       }
     ],
-    "pathLabel": "1 系统 - 竞赛及考试"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 竞赛及考试"
   },
   {
     "name": "信息技术水平报名",
     "url": "https://1.tongji.edu.cn/computerStuRegistration",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "竞赛及考试"
       }
     ],
-    "pathLabel": "1 系统 - 竞赛及考试"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 竞赛及考试"
   },
   {
     "name": "国家汉字应用水平考试报名",
     "url": "https://1.tongji.edu.cn/studentsRegistr",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "竞赛及考试"
       }
     ],
-    "pathLabel": "1 系统 - 竞赛及考试"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 竞赛及考试"
   },
   {
     "name": "我的学科竞赛成绩",
     "url": "https://1.tongji.edu.cn/myCompetitionResults",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "竞赛及考试"
       }
     ],
-    "pathLabel": "1 系统 - 竞赛及考试"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 竞赛及考试"
   },
   {
     "name": "竞赛报名",
     "url": "https://1.tongji.edu.cn/examinationRegistration",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "竞赛及考试"
       }
     ],
-    "pathLabel": "1 系统 - 竞赛及考试"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 竞赛及考试"
   },
   {
     "name": "我的竞赛成绩",
     "url": "https://1.tongji.edu.cn/myResults",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "竞赛及考试"
       }
     ],
-    "pathLabel": "1 系统 - 竞赛及考试"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 竞赛及考试"
   },
   {
     "name": "竞赛目录查询",
     "url": "https://1.tongji.edu.cn/competitionAwards",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "创新创业"
       }
     ],
-    "pathLabel": "1 系统 - 创新创业"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 创新创业"
   },
   {
     "name": "申请创新创业成果",
     "url": "https://1.tongji.edu.cn/resultApply",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
@@ -1028,14 +1028,14 @@
         "name": "申请成果记录"
       }
     ],
-    "pathLabel": "1 系统 - 创新创业 - 申请成果记录"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 创新创业 - 申请成果记录"
   },
   {
     "name": "我的申请",
     "url": "https://1.tongji.edu.cn/resultApplication",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
@@ -1045,14 +1045,14 @@
         "name": "申请成果记录"
       }
     ],
-    "pathLabel": "1 系统 - 创新创业 - 申请成果记录"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 创新创业 - 申请成果记录"
   },
   {
     "name": "创新创业成果记录",
     "url": "https://1.tongji.edu.cn/resultRecord",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
@@ -1062,14 +1062,14 @@
         "name": "申请成果记录"
       }
     ],
-    "pathLabel": "1 系统 - 创新创业 - 申请成果记录"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 创新创业 - 申请成果记录"
   },
   {
     "name": "申请《创新创业实践》课程认定",
     "url": "https://1.tongji.edu.cn/curriculumIdentification",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
@@ -1079,14 +1079,14 @@
         "name": "申请校级课程认定"
       }
     ],
-    "pathLabel": "1 系统 - 创新创业 - 申请校级课程认定"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 创新创业 - 申请校级课程认定"
   },
   {
     "name": "我的申请",
     "url": "https://1.tongji.edu.cn/identificationApplication",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
@@ -1096,14 +1096,14 @@
         "name": "申请校级课程认定"
       }
     ],
-    "pathLabel": "1 系统 - 创新创业 - 申请校级课程认定"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 创新创业 - 申请校级课程认定"
   },
   {
     "name": "申请《创新创业能力拓展项目》课程认定",
     "url": "https://1.tongji.edu.cn/abilityCourseApplyList",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
@@ -1113,14 +1113,14 @@
         "name": "申请院级课程认定"
       }
     ],
-    "pathLabel": "1 系统 - 创新创业 - 申请院级课程认定"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 创新创业 - 申请院级课程认定"
   },
   {
     "name": "我的申请",
     "url": "https://1.tongji.edu.cn/abilityCourseApplication",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
@@ -1130,273 +1130,273 @@
         "name": "申请院级课程认定"
       }
     ],
-    "pathLabel": "1 系统 - 创新创业 - 申请院级课程认定"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 创新创业 - 申请院级课程认定"
   },
   {
     "name": "申请对外交流",
     "url": "https://1.tongji.edu.cn/UGIEExchangeApplication",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "对外交流"
       }
     ],
-    "pathLabel": "1 系统 - 对外交流"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 对外交流"
   },
   {
     "name": "审批详情",
     "url": "https://1.tongji.edu.cn/UGIEApprovalDetail",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "对外交流"
       }
     ],
-    "pathLabel": "1 系统 - 对外交流"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 对外交流"
   },
   {
     "name": "申请学分认定",
     "url": "https://1.tongji.edu.cn/UGIECreditApplication",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "对外交流"
       }
     ],
-    "pathLabel": "1 系统 - 对外交流"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 对外交流"
   },
   {
     "name": "学分认定详情",
     "url": "https://1.tongji.edu.cn/UGIECreditDetail",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "对外交流"
       }
     ],
-    "pathLabel": "1 系统 - 对外交流"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 对外交流"
   },
   {
     "name": "自拟课题申报",
     "url": "https://1.tongji.edu.cn/stuDeclareSubject",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "毕业设计"
       }
     ],
-    "pathLabel": "1 系统 - 毕业设计"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 毕业设计"
   },
   {
     "name": "学生选题",
     "url": "https://1.tongji.edu.cn/studentTopic",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "毕业设计"
       }
     ],
-    "pathLabel": "1 系统 - 毕业设计"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 毕业设计"
   },
   {
     "name": "查看任务书",
     "url": "https://1.tongji.edu.cn/taskView",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "毕业设计"
       }
     ],
-    "pathLabel": "1 系统 - 毕业设计"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 毕业设计"
   },
   {
     "name": "申请课题变更",
     "url": "https://1.tongji.edu.cn/topicChange",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "毕业设计"
       }
     ],
-    "pathLabel": "1 系统 - 毕业设计"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 毕业设计"
   },
   {
     "name": "提交开题报告",
     "url": "https://1.tongji.edu.cn/submitOpeningReport",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "毕业设计"
       }
     ],
-    "pathLabel": "1 系统 - 毕业设计"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 毕业设计"
   },
   {
     "name": "提交中期检查",
     "url": "https://1.tongji.edu.cn/submitMidTermCheck",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "毕业设计"
       }
     ],
-    "pathLabel": "1 系统 - 毕业设计"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 毕业设计"
   },
   {
     "name": "提交毕业设计（论文）",
     "url": "https://1.tongji.edu.cn/submitGraduationDesign",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "毕业设计"
       }
     ],
-    "pathLabel": "1 系统 - 毕业设计"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 毕业设计"
   },
   {
     "name": "下载毕业设计相关文件",
     "url": "https://1.tongji.edu.cn/graduationDesignPrint",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "毕业设计"
       }
     ],
-    "pathLabel": "1 系统 - 毕业设计"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 毕业设计"
   },
   {
     "name": "查看答辩安排",
     "url": "https://1.tongji.edu.cn/viewReplyArrangement",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "毕业设计"
       }
     ],
-    "pathLabel": "1 系统 - 毕业设计"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 毕业设计"
   },
   {
     "name": "延期答辩申请",
     "url": "https://1.tongji.edu.cn/studentDefenceDelayApply",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "毕业设计"
       }
     ],
-    "pathLabel": "1 系统 - 毕业设计"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 毕业设计"
   },
   {
     "name": "上传归档材料",
     "url": "https://1.tongji.edu.cn/archiveMaterials",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "毕业设计"
       }
     ],
-    "pathLabel": "1 系统 - 毕业设计"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 毕业设计"
   },
   {
     "name": "我的报名",
     "url": "https://1.tongji.edu.cn/mySign",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "进阶式(微辅修)"
       }
     ],
-    "pathLabel": "1 系统 - 进阶式(微辅修)"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 进阶式(微辅修)"
   },
   {
     "name": "进阶式选课缴费",
     "url": "https://1.tongji.edu.cn/minorStudentPay",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "进阶式(微辅修)"
       }
     ],
-    "pathLabel": "1 系统 - 进阶式(微辅修)"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 进阶式(微辅修)"
   },
   {
     "name": "我的进阶式成绩",
     "url": "https://1.tongji.edu.cn/myMinorScore",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "进阶式(微辅修)"
       }
     ],
-    "pathLabel": "1 系统 - 进阶式(微辅修)"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 进阶式(微辅修)"
   },
   {
     "name": "我的成绩",
     "url": "https://1.tongji.edu.cn/inquiryResults",
     "path": [
       {
-        "name": "1 系统",
+        "name": "教学管理信息系统",
         "url": "https://1.tongji.edu.cn"
       },
       {
         "name": "社会实践课"
       }
     ],
-    "pathLabel": "1 系统 - 社会实践课"
+    "pathLabel": "教学管理信息系统 (1系统 一系统) - 社会实践课"
   },
   {
     "name": "一网通办",
@@ -6119,23 +6119,6 @@
     "pathLabel": "正版化服务平台 (正版软件 软件下载) - 办公软件 - MS Office 2019"
   },
   {
-    "name": "Office 2016（64位中文版）",
-    "url": "https://software.tongji.edu.cn/product.html?id=81",
-    "path": [
-      {
-        "name": "正版化服务平台",
-        "url": "https://software.tongji.edu.cn/"
-      },
-      {
-        "name": "办公软件"
-      },
-      {
-        "name": "MS Office 2016"
-      }
-    ],
-    "pathLabel": "正版化服务平台 (正版软件 软件下载) - 办公软件 - MS Office 2016"
-  },
-  {
     "name": "Office 2016（32位英文版）",
     "url": "https://software.tongji.edu.cn/product.html?id=83",
     "path": [
@@ -6170,8 +6153,8 @@
     "pathLabel": "正版化服务平台 (正版软件 软件下载) - 办公软件 - MS Office 2016"
   },
   {
-    "name": "Office 2016（32位中文版）",
-    "url": "https://software.tongji.edu.cn/product.html?id=84",
+    "name": "Office 2016（64位中文版）",
+    "url": "https://software.tongji.edu.cn/product.html?id=81",
     "path": [
       {
         "name": "正版化服务平台",
@@ -6187,8 +6170,8 @@
     "pathLabel": "正版化服务平台 (正版软件 软件下载) - 办公软件 - MS Office 2016"
   },
   {
-    "name": "Office 2013（64位中文版）",
-    "url": "https://software.tongji.edu.cn/product.html?id=78",
+    "name": "Office 2016（32位中文版）",
+    "url": "https://software.tongji.edu.cn/product.html?id=84",
     "path": [
       {
         "name": "正版化服务平台",
@@ -6198,10 +6181,10 @@
         "name": "办公软件"
       },
       {
-        "name": "MS Office 2013"
+        "name": "MS Office 2016"
       }
     ],
-    "pathLabel": "正版化服务平台 (正版软件 软件下载) - 办公软件 - MS Office 2013"
+    "pathLabel": "正版化服务平台 (正版软件 软件下载) - 办公软件 - MS Office 2016"
   },
   {
     "name": "Office 2013（32位英文版）",
@@ -6223,6 +6206,23 @@
   {
     "name": "Office 2013（64位英文版）",
     "url": "https://software.tongji.edu.cn/product.html?id=79",
+    "path": [
+      {
+        "name": "正版化服务平台",
+        "url": "https://software.tongji.edu.cn/"
+      },
+      {
+        "name": "办公软件"
+      },
+      {
+        "name": "MS Office 2013"
+      }
+    ],
+    "pathLabel": "正版化服务平台 (正版软件 软件下载) - 办公软件 - MS Office 2013"
+  },
+  {
+    "name": "Office 2013（64位中文版）",
+    "url": "https://software.tongji.edu.cn/product.html?id=78",
     "path": [
       {
         "name": "正版化服务平台",
@@ -6714,8 +6714,8 @@
     "pathLabel": "正版化服务平台 (正版软件 软件下载) - 科学计算类软件 - MATLAB_Linux"
   },
   {
-    "name": "MATLAB R2024b（macOSIntelProcessor）",
-    "url": "https://software.tongji.edu.cn/product.html?id=456",
+    "name": "MATLAB R2024b（macOSAppleSilicon）",
+    "url": "https://software.tongji.edu.cn/product.html?id=457",
     "path": [
       {
         "name": "正版化服务平台",
@@ -6731,8 +6731,8 @@
     "pathLabel": "正版化服务平台 (正版软件 软件下载) - 科学计算类软件 - MATLAB_MAC"
   },
   {
-    "name": "MATLAB R2024b（macOSAppleSilicon）",
-    "url": "https://software.tongji.edu.cn/product.html?id=457",
+    "name": "MATLAB R2024b（macOSIntelProcessor）",
+    "url": "https://software.tongji.edu.cn/product.html?id=456",
     "path": [
       {
         "name": "正版化服务平台",
@@ -7462,23 +7462,6 @@
     "pathLabel": "正版化服务平台 (正版软件 软件下载) - 图形图像 - ADOBE for MAC"
   },
   {
-    "name": "3D Sampler For Windows",
-    "url": "https://software.tongji.edu.cn/product.html?id=436",
-    "path": [
-      {
-        "name": "正版化服务平台",
-        "url": "https://software.tongji.edu.cn/"
-      },
-      {
-        "name": "图形图像"
-      },
-      {
-        "name": "Substance 3D"
-      }
-    ],
-    "pathLabel": "正版化服务平台 (正版软件 软件下载) - 图形图像 - Substance 3D"
-  },
-  {
     "name": "3D Sampler For MAC（Intel芯片）",
     "url": "https://software.tongji.edu.cn/product.html?id=438",
     "path": [
@@ -7651,6 +7634,23 @@
   {
     "name": "3D Stager For Windows",
     "url": "https://software.tongji.edu.cn/product.html?id=439",
+    "path": [
+      {
+        "name": "正版化服务平台",
+        "url": "https://software.tongji.edu.cn/"
+      },
+      {
+        "name": "图形图像"
+      },
+      {
+        "name": "Substance 3D"
+      }
+    ],
+    "pathLabel": "正版化服务平台 (正版软件 软件下载) - 图形图像 - Substance 3D"
+  },
+  {
+    "name": "3D Sampler For Windows",
+    "url": "https://software.tongji.edu.cn/product.html?id=436",
     "path": [
       {
         "name": "正版化服务平台",
