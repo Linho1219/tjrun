@@ -1,7 +1,6 @@
 {
   "extends": ["@vue/tsconfig/tsconfig.dom.json", "@tsconfig/node22/tsconfig.json"],
-  "include": ["data/workflows/**/*", "shared.d.ts"],
-  "exclude": ["src/**/__tests__/*"],
+  "include": ["./**/*", "../shared.d.ts"],
   "compilerOptions": {
     "noEmit": true,
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",

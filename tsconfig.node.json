@@ -7,8 +7,7 @@
     "nightwatch.conf.*",
     "playwright.config.*",
     "eslint.config.*",
-    "shared.d.ts",
-    "data/**/*"
+    "./shared.d.ts"
   ],
   "exclude": ["data/workflows/**/*"],
   "compilerOptions": {
