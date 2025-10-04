@@ -172,6 +172,8 @@ main {
   position: relative;
   border-radius: 0.3rem;
   background-color: rgb(var(--v-theme-surface));
+  border: 1px solid;
+  border-color: rgba(var(--v-border-color), var(--v-border-opacity));
   transition: background-color 0.1s ease-in-out;
   &::after {
     content: '';
@@ -224,9 +226,9 @@ main {
   opacity: 0.75;
 }
 .result-item-container mark {
-  background-color: rgba(var(--v-theme-primary), 0.5) !important;
-  color: rgb(var(--v-on-theme-primary)) !important;
-  box-shadow: 0 0 0 0.1rem rgba(var(--v-theme-primary), 0.5);
+  background-color: rgba(var(--v-theme-primary), 0.8) !important;
+  color: rgb(var(--v-theme-on-primary)) !important;
+  box-shadow: 0 0 0 0.1rem rgba(var(--v-theme-primary), 0.8);
   border-radius: 0.1rem;
 }
 </style>
