@@ -141,6 +141,7 @@ watch(selectedIndex, () => {
 <style lang="scss">
 main {
   margin: 0 auto;
+  padding: 0 0.3rem;
   max-width: 600px;
   width: 100%;
   display: flex;
@@ -238,6 +239,9 @@ a {
     margin: 0 0.3rem;
     opacity: 0.5;
   }
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .result-tag {
   display: flex;
@@ -257,6 +261,9 @@ a {
 }
 .result-item-name {
   font-size: 1.1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .result-item-alias {
   font-size: 0.8rem;
