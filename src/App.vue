@@ -9,8 +9,14 @@ let fuse: Fuse<FlattenedItem> | null = null
 const results = computed(() => {
   if (!input.value || fuse === null) return []
   const results = fuse.search(input.value)
-  if (results.length > maxresults) return results.slice(0, maxresults)
-  return results
+  if (results.length > maxresults) results.length = maxresults
+  const adjustedResults = results.map((r) => {
+    const depth = r.item.path.length
+    const depthPenalty = depth ** 2 * 0.1
+    return { ...r, ascore: r.score! + depthPenalty }
+  })
+  adjustedResults.sort((a, b) => a.ascore - b.ascore)
+  return adjustedResults
 })
 
 ;(async () => {
@@ -18,9 +24,9 @@ const results = computed(() => {
   // console.log(data)
   // indexed = data
   fuse = new Fuse(data, {
-    keys: ['name', 'alias', 'pathLabel'],
+    keys: ['name', 'alias', { name: 'pathLabel', weight: 0.05 }],
     includeScore: true,
-    threshold: 0.3,
+    threshold: 0.6,
     includeMatches: true,
   })
 })()
@@ -64,6 +70,7 @@ watch(selectedIndex, () => {
 <template>
   <v-app id="vapp">
     <main>
+      <div id="logo" :class="{ hidden: input }"><span class="accent">TJ</span>Run</div>
       <div id="search-field">
         <v-text-field
           class="search-input"
@@ -141,6 +148,24 @@ main {
   justify-content: center;
   height: 100vh;
   overflow: hidden;
+  user-select: none;
+}
+#logo {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  transition: opacity 0.8s;
+  height: 4.5rem;
+  margin-top: -4.5rem;
+  .accent {
+    color: rgb(var(--v-theme-primary));
+  }
+  &.hidden {
+    height: 0;
+    margin-top: 0;
+    opacity: 0;
+    transition: none;
+  }
 }
 #search-field {
   padding: 1rem 0;
