@@ -1,12 +1,13 @@
 import 'dotenv/config'
 import fs from 'fs/promises'
 import { chromium, type Page } from 'playwright'
+import { sleep } from './utils'
 import { manualMaintainedData } from './manual.data'
 import { fetchOneData } from './workflows/one'
 import { fetchAllData } from './workflows/all'
 import { fetchSoftwareData } from './workflows/software'
 import { fetchNicData } from './workflows/nic'
-import { sleep } from './utils'
+import { fetchPortalData } from './workflows/portal'
 
 export interface TreeItem {
   name: string
@@ -19,8 +20,14 @@ export interface RootItem extends TreeItem {
   url: string
 }
 
-const workflows = [fetchOneData, fetchAllData, fetchSoftwareData, fetchNicData]
-export async function fetchData(workflows: ((page: Page) => Promise<RootItem>)[]) {
+const workflows: ((page: Page) => Promise<RootItem | RootItem[]>)[] = [
+  fetchOneData,
+  fetchAllData,
+  fetchSoftwareData,
+  fetchNicData,
+  fetchPortalData,
+]
+export async function fetchData(workflows: ((page: Page) => Promise<RootItem | RootItem[]>)[]) {
   const browser = await chromium.launchPersistentContext('./auth', { headless: false })
   const loginPage = await browser.newPage()
   await loginPage.goto('https://iam.tongji.edu.cn/')
@@ -45,7 +52,8 @@ export async function fetchData(workflows: ((page: Page) => Promise<RootItem>)[]
   for (const workflow of workflows) {
     const workflowPage = await browser.newPage()
     const result = await workflow(workflowPage)
-    results.push(result)
+    if (Array.isArray(result)) results.push(...result)
+    else results.push(result)
     await workflowPage.close()
   }
   await browser.close()
