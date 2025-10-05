@@ -1,0 +1,3 @@
+import { fetchdata } from '..'
+
+fetchdata()

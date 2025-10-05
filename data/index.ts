@@ -27,7 +27,7 @@ const workflows: ((page: Page) => Promise<RootItem | RootItem[]>)[] = [
   fetchNicData,
   fetchPortalData,
 ]
-export async function fetchData(workflows: ((page: Page) => Promise<RootItem | RootItem[]>)[]) {
+async function fetchData(workflows: ((page: Page) => Promise<RootItem | RootItem[]>)[]) {
   const browser = await chromium.launchPersistentContext('./auth', { headless: false })
   const loginPage = await browser.newPage()
   await loginPage.goto('https://iam.tongji.edu.cn/')
@@ -61,7 +61,7 @@ export async function fetchData(workflows: ((page: Page) => Promise<RootItem | R
   return results
 }
 
-function flatten(root: TreeItem) {
+export function flatten(root: TreeItem) {
   const path: { name: string; alias?: string; url?: string }[] = []
   const result: FlattenedItem[] = []
   function indexRec(item: TreeItem) {
@@ -84,10 +84,23 @@ function flatten(root: TreeItem) {
   return result
 }
 
-async function main() {
+export async function fetchdata() {
   const fetched = await fetchData(workflows)
   const data = [...fetched, ...manualMaintainedData]
   const flattened = data.map(flatten).flat()
   await fs.writeFile('./public/indexed.json', JSON.stringify(flattened), 'utf-8')
 }
-main()
+
+export async function updmanual() {
+  try {
+    const fetchedJSON = await fs.readFile('./auth/fetch-cache.json', 'utf-8')
+    const fetcheditems = JSON.parse(fetchedJSON) as RootItem[]
+    const data = [...fetcheditems, ...manualMaintainedData]
+    const flattened = data.map(flatten).flat()
+    await fs.writeFile('./public/indexed.json', JSON.stringify(flattened), 'utf-8')
+  } catch (error) {
+    if (error instanceof Error && error.message.includes('no such file or directory'))
+      console.error('fetch-cache.json 文件不存在，请先运行数据抓取')
+    else console.error('Error updating manual data:', error)
+  }
+}

@@ -1,0 +1,3 @@
+import { updmanual } from '..'
+
+updmanual()
