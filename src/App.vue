@@ -62,7 +62,10 @@ function onBlur() {
 const resultRefs = useTemplateRef('resultRefs')
 watch(selectedIndex, () => {
   if (selectedIndex.value < 0) return
-  const el = resultRefs.value?.[selectedIndex.value] as HTMLElement | undefined
+  // refs may not be in correct order
+  const el = resultRefs.value?.find((el) => el.dataset.index === selectedIndex.value.toString()) as
+    | HTMLElement
+    | undefined
   if (el) el.scrollIntoView({ block: 'nearest', behavior: 'smooth' })
 })
 </script>
@@ -92,6 +95,7 @@ watch(selectedIndex, () => {
           class="result-item"
           :class="{ 'is-selected': index === selectedIndex }"
           ref="resultRefs"
+          :data-index="index"
         >
           <a :href="result.item.url" target="_blank" rel="noopener noreferrer" class="result-link">
             <div class="result-item-container" v-ripple>
