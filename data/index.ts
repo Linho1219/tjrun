@@ -87,6 +87,6 @@ async function main() {
   const fetched = await fetchData(workflows)
   const data = [...fetched, ...manualMaintainedData]
   const flattened = data.map(flatten).flat()
-  await fs.writeFile('./public/indexed.json', JSON.stringify(flattened, null, 2), 'utf-8')
+  await fs.writeFile('./public/indexed.json', JSON.stringify(flattened), 'utf-8')
 }
 main()
