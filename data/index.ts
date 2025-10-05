@@ -57,6 +57,7 @@ export async function fetchData(workflows: ((page: Page) => Promise<RootItem | R
     await workflowPage.close()
   }
   await browser.close()
+  await fs.writeFile('./auth/fetch-cache.json', JSON.stringify(results), 'utf-8')
   return results
 }
 

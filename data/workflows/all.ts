@@ -26,7 +26,6 @@ function toTree(raw: All.Response): RootItem {
   const root: RootItem = {
     name: '一网通办',
     url: 'https://all.tongji.edu.cn/',
-    alias: '办事大厅 all',
     children: [],
   }
   const items = raw.data.serviceItemList.map((v) => v.datas).flat()

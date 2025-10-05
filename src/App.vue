@@ -139,15 +139,20 @@ watch(selectedIndex, () => {
 </template>
 
 <style lang="scss">
+::selection {
+  background-color: rgba(var(--v-theme-primary), 0.8);
+  color: rgb(var(--v-theme-on-primary));
+}
 main {
   margin: 0 auto;
-  padding: 0 0.3rem;
+  padding: 0 0.4rem;
   max-width: 600px;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100vh;
+  height: 100dvh;
   overflow: hidden;
   user-select: none;
 }
@@ -157,7 +162,7 @@ main {
   font-weight: bold;
   transition: opacity 0.8s;
   height: 4.5rem;
-  margin-top: -4.5rem;
+  margin-top: -15%;
   .accent {
     color: rgb(var(--v-theme-primary));
   }
@@ -223,10 +228,16 @@ a {
     background-color: currentColor;
     opacity: 0;
     transition: opacity 0.2s ease-in-out;
+    @media (hover: none) {
+      & {
+        display: none;
+      }
+    }
   }
   &:hover::after {
     opacity: calc(var(--v-hover-opacity) * var(--v-theme-overlay-multiplier));
   }
+
   .result-link:focus-visible &,
   .result-item.is-selected & {
     background-color: rgba(var(--v-theme-primary), 0.3) !important;
@@ -272,8 +283,7 @@ a {
 .result-item-container mark {
   background-color: rgba(var(--v-theme-primary), 0.8) !important;
   color: rgb(var(--v-theme-on-primary)) !important;
-  box-shadow: 0 0 0 0.1rem rgba(var(--v-theme-primary), 0.8);
-  border-radius: 0.1rem;
+  border-radius: 0.15rem;
 }
 #about {
   display: flex;

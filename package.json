@@ -14,7 +14,8 @@
     "type-check": "vue-tsc --build",
     "format": "prettier --write src/",
     "init-fetch": "playwright install chromium",
-    "fetch-data": "tsx data/"
+    "fetch-data": "tsx data/",
+    "upd-manual": "tsx data/updmanual"
   },
   "dependencies": {
     "@mdi/font": "^7.4.47",

@@ -11,13 +11,14 @@ const targetPages = [
 
 const blacklist: string[] = []
 const renameMap: Record<string, string> = {
-  '党委学生工作部（学生处、党委研究生工作部、': '党委学生工作部（学生处、党委研究生工作部）',
+  '党委学生工作部（学生处、党委研究生工作部、': '党委学生工作部（学生处、党委研究生工作部 学工部）',
   '武装部）': '武装部',
 }
 const aliasMap: Record<string, string> = {
   关心下一代工作委员会: '关工委',
   妇委: '同济女性 妇女研究中心 妇联',
   '继续教育学院、网络教育学院': '成人教育',
+  团委: '同济青年 共青团',
 }
 
 export async function fetchPortalData(page: Page): Promise<RootItem[]> {

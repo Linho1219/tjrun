@@ -22,7 +22,7 @@ export const manualMaintainedData: RootItem[] = [
   {
     name: 'TJ 一起走',
     url: 'https://pinche.tj.hainuo.wang/',
-    alias: '同济一起走 拼车 搭车',
+    alias: '拼车 搭车',
   },
   {
     name: '排课助手',
@@ -105,6 +105,11 @@ export const manualMaintainedData: RootItem[] = [
     alias: '快讯 要闻',
   },
   {
+    name: '智慧团建',
+    url: 'https://zhtj.youth.cn/zhtj/',
+    alias: '网上共青团',
+  },
+  {
     name: '同济后勤',
     url: 'https://tjhq.tongji.edu.cn',
     children: [
@@ -158,7 +163,7 @@ export const manualMaintainedData: RootItem[] = [
     url: 'https://paycwc.tongji.edu.cn/payment',
     alias: '财务',
   },
-  { name: '一卡通综合管理平台', url: 'https://yikatong.tongji.edu.cn/' },
+  { name: '一卡通', alias: '校园卡', url: 'https://yikatong.tongji.edu.cn/' },
   { name: '开发者平台', url: 'https://dev.tongji.edu.cn/' },
   { name: '校内 GitLab', url: 'https://git.tongji.edu.cn/' },
   {
