@@ -34,11 +34,11 @@ function toTree(raw: Software.Response): RootItem {
     url: 'https://software.tongji.edu.cn/',
     alias: '正版软件 软件下载',
     children: raw.data.map((category) => ({
-      name: category.menuName,
+      name: prettyPrintName(category.menuName),
       children: category.childMenusList.map((subCategory) => ({
-        name: subCategory.menuName,
+        name: prettyPrintName(subCategory.menuName),
         children: subCategory.softs.map((service) => ({
-          name: service.name,
+          name: prettyPrintName(service.name),
           url: urlBase + service.softwareId,
           alias: service.shortName,
         })),
@@ -46,6 +46,13 @@ function toTree(raw: Software.Response): RootItem {
     })),
   }
 }
+
+const prettyPrintName = (name: string) =>
+  name
+    .replace(/[-_]/g, ' ')
+    .trim()
+    .replace(/(?<=[^ ])\(/g, ' (')
+    .replace(/\)(?=[^ ])/g, ') ')
 
 export async function fetchSoftwareData(page: Page): Promise<RootItem> {
   await page.goto('https://software.tongji.edu.cn/')

@@ -8,6 +8,7 @@ export namespace All {
     itemName: string
     itemPinYin: string
     itemCategory: string
+    workGuide: boolean
   }
 
   export interface Response {
@@ -21,7 +22,36 @@ export namespace All {
   }
 }
 
-const urlBase = 'https://all.tongji.edu.cn/new/index.html#/?pageCode=itemDetail&wid='
+// already included in other places
+const blacklist = [
+  'Canvas',
+  '教学一体化系统',
+  '媒资库 | 录课回看',
+  '云媒体',
+  'iTongji-S',
+  '就业系统',
+  '“卓越·星”计划',
+  'AI应用创新平台',
+  '代码仓库平台（gitlab）',
+  '一卡通系统',
+  '一卡通流水查询',
+  '图书馆系统',
+  '图书馆研习室预约',
+  '图书馆座位预约',
+  '图书馆人流量查询',
+  '图书借阅',
+  '图片库',
+  '统一身份认证自助服务',
+  '学生电子证明文件',
+]
+
+function getUrl(item: All.ServiceItem): string {
+  if (item.workGuide)
+    return `https://all.tongji.edu.cn/new/index.html#/?pageCode=itemDetail&wid=${item.itemWid}`
+  else
+    return `https://all.tongji.edu.cn/simJump?id=${item.itemWid}&name=${encodeURIComponent(item.itemName)}&isOnline=1`
+}
+
 function toTree(raw: All.Response): RootItem {
   const root: RootItem = {
     name: '一网通办',
@@ -30,20 +60,22 @@ function toTree(raw: All.Response): RootItem {
   }
   const items = raw.data.serviceItemList.map((v) => v.datas).flat()
   const categorys = new Map<string, TreeItem>()
-  items.forEach((item) => {
-    if (!categorys.has(item.itemCategory)) {
-      const categoryNode: TreeItem = {
-        name: item.itemCategory,
-        children: [],
+  items
+    .filter(({ itemName }) => !blacklist.some((b) => b === itemName))
+    .forEach((item) => {
+      if (!categorys.has(item.itemCategory)) {
+        const categoryNode: TreeItem = {
+          name: item.itemCategory,
+          children: [],
+        }
+        categorys.set(item.itemCategory, categoryNode)
+        root.children!.push(categoryNode)
       }
-      categorys.set(item.itemCategory, categoryNode)
-      root.children!.push(categoryNode)
-    }
-    categorys.get(item.itemCategory)!.children!.push({
-      name: item.itemName,
-      url: urlBase + item.itemWid,
+      categorys.get(item.itemCategory)!.children!.push({
+        name: item.itemName,
+        url: getUrl(item),
+      })
     })
-  })
   return root
 }
 

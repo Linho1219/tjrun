@@ -57,13 +57,9 @@ export const manualMaintainedData: RootItem[] = [
     alias: '出行 班车 交通',
   },
   {
-    name: 'Canvas',
-    url: 'http://canvas.tongji.edu.cn/',
-  },
-  {
     name: '创新创业平台',
     url: 'https://cxcy.tongji.edu.cn/',
-    alias: '大创 大学生创新训练计划管理系统',
+    alias: '双创 大创 大学生创新训练计划',
   },
   {
     name: '高程作业提交',
@@ -71,9 +67,9 @@ export const manualMaintainedData: RootItem[] = [
     alias: '高级语言程序设计',
   },
   {
-    name: '同济大学移动门户',
+    name: '移动门户',
     url: 'https://all4u.tongji.edu.cn/tj-portal/page/mobile',
-    alias: '同心云 小程序',
+    alias: '同心云 微信小程序',
   },
   {
     name: '宿舍购电',
@@ -81,31 +77,25 @@ export const manualMaintainedData: RootItem[] = [
     alias: '电费',
   },
   {
-    name: 'AI 创新平台',
-    url: 'http://agent.tongji.edu.cn/',
-  },
-  {
-    name: '同济邮箱',
-    url: 'https://mail.tongji.edu.cn/',
-  },
-  {
     name: '智慧教学媒体',
     url: 'https://look.tongji.edu.cn',
-    alias: '录课 录播 回放',
+    alias: '录课 录播 回放 回看 媒资库',
   },
   {
     name: '云媒体平台 (旧)',
     url: 'http://v.tongji.edu.cn',
-    alias: '录课 录播 回放',
+    alias: '录课 录播 回放 回看 媒资库',
   },
   {
-    name: '物理实验中心',
-    url: 'http://phyvr.tongji.edu.cn',
+    name: '统一身份访问控制自助服务平台',
+    url: 'https://iam.tongji.edu.cn/self-service/',
+    alias: '统一身份认证 密码修改 微信绑定',
+    priority: 2,
   },
   {
     name: '第二课堂活动平台',
     url: 'https://itongjis.tongji.edu.cn/',
-    alias: 'itongjis itongji-s',
+    alias: 'iTongji-S',
   },
   {
     name: '同济云盘',
@@ -116,6 +106,20 @@ export const manualMaintainedData: RootItem[] = [
     name: '同济同学',
     url: 'https://tjtx.tongji.edu.cn/',
     alias: 'AI 智能助手',
+  },
+  {
+    name: '图书馆书目检索系统',
+    url: 'https://webpac.tongji.edu.cn/',
+    priority: 1,
+  },
+  {
+    name: '图书馆空间预约系统',
+    url: 'https://space.tongji.edu.cn/',
+    children: [
+      { name: '研习室预约', url: 'https://space.tongji.edu.cn/h5/#/SeatScreening/2' },
+      { name: '座位预约', url: 'https://space.tongji.edu.cn/h5/#/SeatScreening/1' },
+    ],
+    priority: 2,
   },
   {
     name: '卓越·星',
@@ -201,7 +205,7 @@ export const manualMaintainedData: RootItem[] = [
     ],
   },
   {
-    name: '证明文件',
+    name: '学生电子证明文件',
     url: 'https://zzfw.tongji.edu.cn/wec-self-print-app-console/mobile.html#/mobile/itemList',
     alias: '自助服务 自助打印',
     children: [
@@ -220,6 +224,7 @@ export const manualMaintainedData: RootItem[] = [
       {
         name: '本科成绩计算方式证明',
         url: 'https://zzfw.tongji.edu.cn/wec-self-print-app-console/mobile.html#/mobile/orderDetail?id=1511973850055708674',
+        priority: -1,
       },
       {
         name: '本科生出入境证明',
@@ -243,9 +248,16 @@ export const manualMaintainedData: RootItem[] = [
       },
     ],
   },
+  { name: '物理实验中心', url: 'http://phyvr.tongji.edu.cn' },
+  { name: 'Canvas', url: 'http://canvas.tongji.edu.cn/' },
+  { name: 'AI 创新平台', url: 'http://agent.tongji.edu.cn/' },
+  { name: '同济邮箱', url: 'https://mail.tongji.edu.cn/' },
+  { name: '博物馆', url: 'https://museum.tongji.edu.cn/' },
   { name: '中国大学 MOOC', url: 'https://www.icourse163.org/', alias: 'SPOC' },
   { name: '超星学习通', url: 'http://www.chaoxing.com/' },
   { name: '智慧树', url: 'http://online.zhihuishu.com/onlineSchool/student/index', alias: '知到' },
   { name: '课堂派', url: 'https://www.ketangpai.com/#/main' },
   { name: 'iLab-X 虚拟实验', url: 'https://www.ilab-x.com/' },
+  { name: '中国知网', url: 'https://www.cnki.net/' },
+  { name: '万方数据', url: 'https://www.wanfangdata.com.cn/' },
 ]
