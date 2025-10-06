@@ -4,15 +4,19 @@ export const manualMaintainedData: RootItem[] = [
   {
     name: '乌龙茶选课社区',
     url: 'https://1.tongji.icu/',
+    priority: 1,
   },
   {
     name: '济你太美网址导航',
     url: 'https://tongji.icu/',
+    alias: '乌龙茶导航',
+    priority: 1,
   },
   {
     name: '舟济社区',
     url: 'https://home.tongji.icu/',
     alias: '论坛',
+    priority: 1,
   },
   {
     name: '一块钱',
@@ -25,14 +29,22 @@ export const manualMaintainedData: RootItem[] = [
     alias: '拼车 搭车',
   },
   {
-    name: '排课助手',
+    name: '同济排课助手',
     url: 'https://xk.xialing.icu/',
-    alias: '选课助手',
+    alias: '第三方模拟选课系统',
+  },
+  {
+    name: '通知公告备份站',
+    url: 'https://1.xialing.icu/',
+  },
+  {
+    name: '课程检索系统',
+    url: 'https://tongji.xialing.icu/',
   },
   {
     name: '通济',
     url: 'https://course.f1justin.com/',
-    alias: '模拟选课系统',
+    alias: '第三方模拟选课系统',
   },
   {
     name: 'TJRun',
@@ -54,6 +66,11 @@ export const manualMaintainedData: RootItem[] = [
     alias: '大创 大学生创新训练计划管理系统',
   },
   {
+    name: '高程作业提交',
+    url: 'http://192.168.174.220/',
+    alias: '高级语言程序设计',
+  },
+  {
     name: '同济大学移动门户',
     url: 'https://all4u.tongji.edu.cn/tj-portal/page/mobile',
     alias: '同心云 小程序',
@@ -61,6 +78,7 @@ export const manualMaintainedData: RootItem[] = [
   {
     name: '宿舍购电',
     url: 'http://goudian.tongji.edu.cn/',
+    alias: '电费',
   },
   {
     name: 'AI 创新平台',
@@ -73,12 +91,12 @@ export const manualMaintainedData: RootItem[] = [
   {
     name: '智慧教学媒体',
     url: 'https://look.tongji.edu.cn',
-    alias: '录课 录播',
+    alias: '录课 录播 回放',
   },
   {
     name: '云媒体平台 (旧)',
     url: 'http://v.tongji.edu.cn',
-    alias: '录课 录播',
+    alias: '录课 录播 回放',
   },
   {
     name: '物理实验中心',
@@ -100,9 +118,9 @@ export const manualMaintainedData: RootItem[] = [
     alias: 'AI 智能助手',
   },
   {
-    name: '新闻网',
-    url: 'https://news.tongji.edu.cn/',
-    alias: '快讯 要闻',
+    name: '卓越·星',
+    url: 'https://star.tongji.edu.cn/app/',
+    alias: '五育',
   },
   {
     name: '智慧团建',
@@ -139,7 +157,6 @@ export const manualMaintainedData: RootItem[] = [
       },
       {
         name: '服务应用',
-        url: 'https://tjhq.tongji.edu.cn/ihome/search',
         children: [
           { name: '我要报修', url: 'https://tjhq.tongji.edu.cn/ihome/newRepair' },
           { name: '建议投诉', url: 'https://tjhq.tongji.edu.cn/ihome/service/catalogue' },
@@ -161,9 +178,14 @@ export const manualMaintainedData: RootItem[] = [
   {
     name: '缴费平台',
     url: 'https://paycwc.tongji.edu.cn/payment',
-    alias: '财务',
+    alias: '财务 学费',
   },
-  { name: '一卡通', alias: '校园卡', url: 'https://yikatong.tongji.edu.cn/' },
+  {
+    name: '一卡通综合管理平台',
+    alias: '校园卡 充值 流水',
+    url: 'https://yikatong.tongji.edu.cn/',
+    priority: 3,
+  },
   { name: '开发者平台', url: 'https://dev.tongji.edu.cn/' },
   { name: '校内 GitLab', url: 'https://git.tongji.edu.cn/' },
   {
@@ -174,8 +196,51 @@ export const manualMaintainedData: RootItem[] = [
       { name: '专题', url: 'https://photo.tongji.edu.cn/zt.htm' },
       { name: '图片', url: 'https://photo.tongji.edu.cn/tp.htm' },
       { name: '视频', url: 'https://photo.tongji.edu.cn/sp.htm' },
-      { name: '声音', url: 'https://photo.tongji.edu.cn/sy.htm', alias: '广播台 同广要闻' },
-      { name: '校报', url: 'https://photo.tongji.edu.cn/xb.htm', alias: '同济报 校刊' },
+      { name: '声音', url: 'https://photo.tongji.edu.cn/sy.htm', alias: '广播台 同广要闻 新闻' },
+      { name: '校报', url: 'https://photo.tongji.edu.cn/xb.htm', alias: '同济报 校刊 新闻' },
+    ],
+  },
+  {
+    name: '证明文件',
+    url: 'https://zzfw.tongji.edu.cn/wec-self-print-app-console/mobile.html#/mobile/itemList',
+    alias: '自助服务 自助打印',
+    children: [
+      {
+        name: '本研校内奖学金',
+        url: 'https://zzfw.tongji.edu.cn/wec-self-print-app-console/mobile.html#/mobile/orderDetail?id=1301787450619756546',
+      },
+      {
+        name: '本科校外奖学金',
+        url: 'https://zzfw.tongji.edu.cn/wec-self-print-app-console/mobile.html#/mobile/orderDetail?id=1301789030244974594',
+      },
+      {
+        name: '本科生在读证明',
+        url: 'https://zzfw.tongji.edu.cn/wec-self-print-app-console/mobile.html#/mobile/orderDetail?id=1511665017672437761',
+      },
+      {
+        name: '本科成绩计算方式证明',
+        url: 'https://zzfw.tongji.edu.cn/wec-self-print-app-console/mobile.html#/mobile/orderDetail?id=1511973850055708674',
+      },
+      {
+        name: '本科生出入境证明',
+        url: 'https://zzfw.tongji.edu.cn/wec-self-print-app-console/mobile.html#/mobile/orderDetail?id=1511975769566351361',
+      },
+      {
+        name: '本科生英文成绩单',
+        url: 'https://zzfw.tongji.edu.cn/wec-self-print-app-console/mobile.html#/mobile/orderDetail?id=1511981154608091137',
+      },
+      {
+        name: '本科生中文成绩单',
+        url: 'https://zzfw.tongji.edu.cn/wec-self-print-app-console/mobile.html#/mobile/orderDetail?id=1511982679250178049',
+      },
+      {
+        name: '本科生进阶式培养成绩单',
+        url: 'https://zzfw.tongji.edu.cn/wec-self-print-app-console/mobile.html#/mobile/orderDetail?id=1933477272036052993',
+      },
+      {
+        name: '学籍专业排名',
+        url: 'https://zzfw.tongji.edu.cn/wec-self-print-app-console/mobile.html#/mobile/orderDetail?id=1798312171055091713',
+      },
     ],
   },
   { name: '中国大学 MOOC', url: 'https://www.icourse163.org/', alias: 'SPOC' },

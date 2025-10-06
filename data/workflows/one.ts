@@ -30,6 +30,12 @@ const blacklistIds = [
   11787, 11788, 11789, 11800, 11801, 11802, 11803,
 ] as const
 const urlBase = 'https://1.tongji.edu.cn'
+const priorityMap: Map<number, number> = new Map([
+  [9094, 3], // 个人选课
+])
+const aliasMap: Map<number, string> = new Map([
+  [9073, '大类分流'], // 主修专业确认
+])
 
 function toTree(raw: One.Response): OneRootItem {
   const services = raw.data.auths
@@ -37,7 +43,7 @@ function toTree(raw: One.Response): OneRootItem {
   const rootItem: OneTreeItem = {
     name: '教学管理信息系统',
     id: -1,
-    alias: '1系统 一系统',
+    alias: '1 一',
     children: [],
     url: urlBase,
   }
@@ -47,6 +53,8 @@ function toTree(raw: One.Response): OneRootItem {
       name: service.authNameCh,
       id: service.authId,
       url: service.urlPath ? urlBase + service.urlPath : undefined,
+      priority: priorityMap.get(service.authId),
+      alias: aliasMap.get(service.authId),
     }
     idMap.set(service.authId, item)
   }
@@ -61,11 +69,8 @@ function toTree(raw: One.Response): OneRootItem {
       console.warn('parent not found', service.authNameCh)
       continue
     }
-    if (parent.children === undefined) {
-      parent.children = [item]
-    } else {
-      parent.children.push(item)
-    }
+    if (parent.children === undefined) parent.children = [item]
+    else parent.children.push(item)
   }
   function prune(item: OneTreeItem): OneTreeItem | null {
     if (blacklistIds.some((b) => item.id === b)) return null
