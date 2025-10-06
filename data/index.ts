@@ -71,7 +71,8 @@ export function flatten(root: TreeItem) {
         name: item.name,
         url: item.url,
         path: path.map((p) => ({ name: p.name, url: p.url })),
-        pathLabel: path.map((p) => p.name + (p.alias ? ` (${p.alias})` : '')).join(' - '),
+        pathLabel:
+          path.map((p) => p.name + (p.alias ? ` (${p.alias})` : '')).join(' - ') || undefined,
         description: item.description || undefined,
         alias: item.alias || undefined,
         priority: item.priority || undefined,

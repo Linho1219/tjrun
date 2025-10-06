@@ -5,7 +5,7 @@ interface FlattenedItem {
     name: string
     url?: string
   }[]
-  pathLabel: string
+  pathLabel?: string
   description?: string
   alias?: string
   priority?: number
