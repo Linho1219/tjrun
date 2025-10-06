@@ -7,7 +7,7 @@ export async function fetchNicData(page: Page): Promise<RootItem> {
   await page.waitForLoadState('networkidle')
   await sleep(2000)
   const raw = await page.evaluate(() => {
-    const targetMenus = ['服务指南', '制度规范', '下载专区', '常见问题']
+    const targetMenus = ['服务指南', '制度规范', '常见问题']
     const items = targetMenus.map((title) => {
       const ul = document.querySelector(`a[title="${title}"] ~ ul`) as HTMLUListElement | null
       if (!ul) throw new Error(`Cannot find menu: ${title}`)

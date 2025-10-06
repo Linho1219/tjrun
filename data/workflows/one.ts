@@ -41,9 +41,9 @@ function toTree(raw: One.Response): OneRootItem {
   const services = raw.data.auths
   const idMap = new Map<number, OneTreeItem>()
   const rootItem: OneTreeItem = {
-    name: '教学管理信息系统',
+    name: '教学一体化系统',
     id: -1,
-    alias: '1 一',
+    alias: '1',
     children: [],
     url: urlBase,
   }

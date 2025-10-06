@@ -43,6 +43,10 @@ const blacklist = [
   '图片库',
   '统一身份认证自助服务',
   '学生电子证明文件',
+  '信息公开',
+  '一卡通基本信息查询',
+  '人才招聘网',
+  '同济云盘',
 ]
 
 function getUrl(item: All.ServiceItem): string {
