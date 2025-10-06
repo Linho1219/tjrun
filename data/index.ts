@@ -15,6 +15,7 @@ export interface TreeItem {
   children?: TreeItem[]
   description?: string
   alias?: string
+  priority?: number
 }
 export interface RootItem extends TreeItem {
   url: string
@@ -73,6 +74,7 @@ export function flatten(root: TreeItem) {
         pathLabel: path.map((p) => p.name + (p.alias ? ` (${p.alias})` : '')).join(' - '),
         description: item.description || undefined,
         alias: item.alias || undefined,
+        priority: item.priority || undefined,
       })
     }
     if (item.children === undefined || item.children.length === 0) return

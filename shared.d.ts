@@ -8,4 +8,5 @@ interface FlattenedItem {
   pathLabel: string
   description?: string
   alias?: string
+  priority?: number
 }

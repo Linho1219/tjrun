@@ -12,12 +12,28 @@ const results = computed(() => {
   if (results.length > maxresults) results.length = maxresults
   const adjustedResults = results.map((r) => {
     const depth = r.item.path.length
-    const depthPenalty = depth ** 2 * 0.1
-    return { ...r, ascore: r.score! + depthPenalty }
+    const depthPenalty = (depth ** 2 + 1) * 0.05 - (r.item.priority ?? 0) * 0.2
+    const tag = r.item.path.length === 0 ? giveTag(r.item.url) : null
+    return { ...r, ascore: r.score! + depthPenalty, tag }
   })
   adjustedResults.sort((a, b) => a.ascore - b.ascore)
   return adjustedResults
 })
+const internalList = ['software', 'git']
+function giveTag(urlstr: string) {
+  const url = new URL(urlstr)
+  const INTERNAL = { class: 'internal', label: '内网网站' }
+  const OFFICIAL = { class: 'official', label: '官方网站' }
+  const OOLONG = { class: 'oolong', label: '乌龙茶网站' }
+  const THIRD = { class: '', label: '第三方网站' }
+  if (url.hostname.startsWith('192.168') || url.hostname.startsWith('172.')) return INTERNAL
+  if (url.hostname.endsWith('tongji.edu.cn')) {
+    if (internalList.some((item) => url.hostname.startsWith(item))) return INTERNAL
+    return OFFICIAL
+  }
+  if (url.hostname.endsWith('tongji.icu')) return OOLONG
+  return THIRD
+}
 
 ;(async () => {
   const data = await fetch('/indexed.json').then((res) => res.json())
@@ -26,7 +42,7 @@ const results = computed(() => {
   fuse = new Fuse(data, {
     keys: ['name', 'alias', { name: 'pathLabel', weight: 0.05 }],
     includeScore: true,
-    threshold: 0.6,
+    threshold: 0.8,
     includeMatches: true,
   })
 })()
@@ -79,7 +95,7 @@ watch(selectedIndex, () => {
           class="search-input"
           variant="outlined"
           placeholder="键入以开始搜索"
-          v-model="input"
+          v-model.trim="input"
           hide-details="auto"
           clearable
           prepend-inner-icon="mdi-magnify"
@@ -105,14 +121,8 @@ watch(selectedIndex, () => {
                   <span class="result-path-separator">/</span>
                 </template>
               </div>
-              <div v-else class="result-tag">
-                <span v-if="result.item.url.includes('tongji.edu.cn')" class="official">
-                  官方网站
-                </span>
-                <span v-else-if="result.item.url.includes('tongji.icu')" class="oolong">
-                  乌龙茶网站
-                </span>
-                <span v-else> 第三方网站 </span>
+              <div v-else-if="result.tag" class="result-tag">
+                <span :class="result.tag.class">{{ result.tag.label }}</span>
               </div>
               <div class="result-item-name">
                 <WithHighlight :text="result.item.name" :indices="getIndices('name', result)" />
@@ -270,6 +280,9 @@ a {
     }
     &.oolong {
       color: rgb(var(--v-theme-secondary));
+    }
+    &.internal {
+      color: rgb(var(--v-theme-warning));
     }
     color: rgb(var(--v-theme-on-surface), 0.5);
   }
