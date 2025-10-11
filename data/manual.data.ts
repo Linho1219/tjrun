@@ -22,7 +22,7 @@ export const manualMaintainedData: RootItem[] = [
   { name: '宿舍购电', url: 'http://goudian.tongji.edu.cn/', alias: '电费' },
   { name: '智慧教学媒体', url: 'https://look.tongji.edu.cn', alias: '录课 录播 回放 回看 媒资库' },
   { name: '云媒体平台 (旧)', url: 'http://v.tongji.edu.cn', alias: '录课 录播 回放 回看 媒资库' },
-  { name: '第二课堂活动平台', url: 'https://itongjis.tongji.edu.cn/', alias: 'iTongji-S' },
+  { name: '第二课堂活动平台', url: 'https://itongjis.tongji.edu.cn/', alias: 'iTongji-S 劳动实践' },
   { name: '同济云盘', url: 'https://yunpan.tongji.edu.cn/', alias: '网盘' },
   { name: '同济同学', url: 'https://tjtx.tongji.edu.cn/', alias: 'AI 智能助手' },
   { name: '图书馆书目检索系统', url: 'https://webpac.tongji.edu.cn/', priority: 1 },
