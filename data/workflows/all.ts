@@ -47,6 +47,7 @@ const blacklist = [
   '一卡通基本信息查询',
   '人才招聘网',
   '同济云盘',
+  '体育场馆预约',
 ]
 
 function getUrl(item: All.ServiceItem): string {
