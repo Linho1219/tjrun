@@ -5,7 +5,10 @@ import WithHighlight from './components/WithHighlight.vue'
 const input = ref('')
 const maxresults = 10
 // let indexed: FlattenedItem[] | null = null
-let fuse: Fuse<FlattenedItem> | null = null
+interface FlattenedItemWithPathLabel extends FlattenedItem {
+  pathLabel?: string
+}
+let fuse: Fuse<FlattenedItemWithPathLabel> | null = null
 const results = computed(() => {
   if (!input.value || fuse === null) return []
   const results = fuse.search(input.value)
@@ -39,7 +42,11 @@ function giveTag(urlstr: string) {
   const data = await fetch('/indexed.json').then((res) => res.json())
   // console.log(data)
   // indexed = data
-  fuse = new Fuse(data, {
+  const dataWithPathLabel: FlattenedItemWithPathLabel[] = data.map((item: FlattenedItem) => ({
+    ...item,
+    pathLabel: item.path.map((p) => `${p.name} ${p.alias ?? ''}`).join(' ') || undefined,
+  }))
+  fuse = new Fuse(dataWithPathLabel, {
     keys: ['name', 'alias', { name: 'pathLabel', weight: 0.05 }],
     includeScore: true,
     threshold: 0.8,
@@ -47,7 +54,7 @@ function giveTag(urlstr: string) {
   })
 })()
 
-function getIndices(field: string, result: FuseResult<FlattenedItem>) {
+function getIndices(field: string, result: FuseResult<FlattenedItemWithPathLabel>) {
   const match = result.matches?.find((m) => m.key === field)
   if (!match) return undefined
   return match.indices as [number, number][]

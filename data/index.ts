@@ -1,5 +1,6 @@
 import 'dotenv/config'
 import fs from 'fs/promises'
+import pangu from 'pangu'
 import { chromium, type Page } from 'playwright'
 import { sleep } from './utils'
 import { manualMaintainedData } from './manual.data'
@@ -62,24 +63,24 @@ async function fetchData(workflows: ((page: Page) => Promise<RootItem | RootItem
   return results
 }
 
+const format = <T extends string | undefined>(s: T) =>
+  (s === undefined ? undefined : pangu.spacingText(s.replace(/[\s、,，]+/g, ' ').trim())) as T
 export function flatten(root: TreeItem) {
-  const path: { name: string; alias?: string; url?: string }[] = []
+  const path: Readonly<{ name: string; alias?: string; url?: string }>[] = []
   const result: FlattenedItem[] = []
   function indexRec(item: TreeItem) {
     if (item.url) {
       result.push({
-        name: item.name,
+        name: format(item.name),
         url: item.url,
-        path: path.map((p) => ({ name: p.name, url: p.url })),
-        pathLabel:
-          path.map((p) => p.name + (p.alias ? ` (${p.alias})` : '')).join(' - ') || undefined,
+        path: [...path],
         description: item.description || undefined,
-        alias: item.alias || undefined,
+        alias: format(item.alias),
         priority: item.priority || undefined,
       })
     }
     if (item.children === undefined || item.children.length === 0) return
-    path.push({ name: item.name, url: item.url, alias: item.alias })
+    path.push({ name: format(item.name), url: item.url, alias: format(item.alias) })
     for (const child of item.children) indexRec(child)
     path.pop()
   }

@@ -9,13 +9,9 @@ interface FlattenedItem {
    */
   path: {
     name: string
+    alias?: string
     url?: string
   }[]
-  /**
-   * 文本形式的项目路径
-   * 便于搜索
-   */
-  pathLabel?: string
   /** 项目描述 */
   description?: string
   /** 项目别名 */

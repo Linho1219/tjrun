@@ -30,6 +30,7 @@
     "@vue/tsconfig": "^0.8.1",
     "dotenv": "^17.2.3",
     "npm-run-all2": "^8.0.4",
+    "pangu": "^7.2.0",
     "playwright": "^1.55.1",
     "prettier": "3.6.2",
     "sass-embedded": "^1.93.2",
