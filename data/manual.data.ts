@@ -62,6 +62,12 @@ export const manualMaintainedData: RootItem[] = [
     priority: 1,
   },
   {
+    name: '社会实践管理平台',
+    url: 'https://shsj.tongji.edu.cn/',
+    alias: '思政 实践报告 小论文 提交',
+    priority: 1,
+  },
+  {
     name: '图书馆空间预约系统',
     url: 'https://space.tongji.edu.cn/',
     children: [

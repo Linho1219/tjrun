@@ -48,6 +48,7 @@ const blacklist = [
   '人才招聘网',
   '同济云盘',
   '体育场馆预约',
+  '同济WPS 356教育版激活',
 ]
 
 function getUrl(item: All.ServiceItem): string {

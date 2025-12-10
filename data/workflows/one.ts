@@ -35,6 +35,7 @@ const priorityMap: Map<number, number> = new Map([
 ])
 const aliasMap: Map<number, string> = new Map([
   [9073, '大类分流'], // 主修专业确认
+  [9102, '申请缓考'], // 我的考试
 ])
 
 function toTree(raw: One.Response): OneRootItem {
