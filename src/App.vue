@@ -160,7 +160,7 @@ watch(selectedIndex, () => {
 main {
   margin: 0 auto;
   padding: 0 0.4rem;
-  max-width: 600px;
+  --max-width: 600px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -176,7 +176,7 @@ main {
   font-weight: bold;
   transition: opacity 0.8s;
   height: 4.5rem;
-  margin-top: -15%;
+  margin-top: -5%;
   .accent {
     color: rgb(var(--v-theme-primary));
   }
@@ -189,6 +189,9 @@ main {
 }
 #search-field {
   padding: 1rem 0;
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
 }
 .search-input {
   font-size: 1.5rem;
@@ -213,6 +216,9 @@ main {
   list-style: none;
   margin: 0;
   padding: 0;
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
 }
 a {
   text-decoration: none;
