@@ -32,11 +32,14 @@ const blacklistIds = [
 const urlBase = 'https://1.tongji.edu.cn'
 const priorityMap: Map<number, number> = new Map([
   [9094, 3], // 个人选课
+  [12174, 2], // 选课网我的成绩
 ])
 const aliasMap: Map<number, string> = new Map([
   [9073, '大类分流'], // 主修专业确认
   [9102, '申请缓考'], // 我的考试
+  [12174, '选课网我的成绩 绩点'], // 选课网我的成绩
 ])
+const renameMap: Map<number, string> = new Map([[12174, '成绩查询']]) // 选课网我的成绩
 
 function toTree(raw: One.Response): OneRootItem {
   const services = raw.data.auths
@@ -51,7 +54,7 @@ function toTree(raw: One.Response): OneRootItem {
   idMap.set(-1, rootItem)
   for (const service of services) {
     const item: OneTreeItem = {
-      name: service.authNameCh,
+      name: renameMap.get(service.authId) ?? service.authNameCh,
       id: service.authId,
       url: service.urlPath ? urlBase + service.urlPath : undefined,
       priority: priorityMap.get(service.authId),

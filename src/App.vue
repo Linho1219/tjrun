@@ -19,7 +19,7 @@ const results = computed(() => {
   adjustedResults.sort((a, b) => a.ascore - b.ascore)
   return adjustedResults
 })
-const internalList = ['software', 'git']
+const internalList = ['software', 'git', 'net']
 function giveTag(urlstr: string) {
   const url = new URL(urlstr)
   const INTERNAL = { class: 'internal', label: '内网网站' }
@@ -27,11 +27,11 @@ function giveTag(urlstr: string) {
   const OOLONG = { class: 'oolong', label: '乌龙茶网站' }
   const THIRD = { class: '', label: '第三方网站' }
   if (url.hostname.startsWith('192.168') || url.hostname.startsWith('172.')) return INTERNAL
-  if (url.hostname.endsWith('tongji.edu.cn')) {
+  if (url.hostname.includes('tongji.edu.cn')) {
     if (internalList.some((item) => url.hostname.startsWith(item))) return INTERNAL
     return OFFICIAL
   }
-  if (url.hostname.endsWith('tongji.icu')) return OOLONG
+  if (url.hostname.includes('tongji.icu')) return OOLONG
   return THIRD
 }
 

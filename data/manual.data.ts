@@ -18,10 +18,9 @@ export const manualMaintainedData: RootItem[] = [
     ],
   },
   { name: '同济大学浙江学院', url: 'https://www.tjzj.edu.cn/' },
-  { name: '高程作业提交', url: 'http://192.168.174.220/', alias: '高级语言程序设计' },
+  { name: '高程作业提交', url: 'http://192.168.174.220/', alias: '高级语言程序设计 沈坚' },
   { name: '宿舍购电', url: 'http://goudian.tongji.edu.cn/', alias: '电费' },
   { name: '智慧教学媒体', url: 'https://look.tongji.edu.cn', alias: '录课 录播 回放 回看 媒资库' },
-  { name: '云媒体平台 (旧)', url: 'http://v.tongji.edu.cn', alias: '录课 录播 回放 回看 媒资库' },
   { name: '第二课堂活动平台', url: 'https://itongjis.tongji.edu.cn/', alias: 'iTongji-S 劳动实践' },
   { name: '同济云盘', url: 'https://yunpan.tongji.edu.cn/', alias: '网盘' },
   { name: '同济同学', url: 'https://tjtx.tongji.edu.cn/', alias: 'AI 智能助手' },
@@ -32,7 +31,6 @@ export const manualMaintainedData: RootItem[] = [
   { name: '校内 GitLab', url: 'https://git.tongji.edu.cn/' },
   { name: '体育场馆预约', url: 'https://stadium.tongji.edu.cn/', alias: '球场 健身房' },
   { name: '高数同步课堂', url: 'https://gaoshutongbu.tongji.edu.cn/', alias: '数学' },
-  { name: '缴费平台', url: 'https://paycwc.tongji.edu.cn/payment', alias: '财务 学费' },
   { name: '物理实验中心', url: 'http://phyvr.tongji.edu.cn' },
   { name: 'Canvas', url: 'http://canvas.tongji.edu.cn/' },
   { name: 'AI 创新平台', url: 'http://agent.tongji.edu.cn/' },
@@ -45,6 +43,15 @@ export const manualMaintainedData: RootItem[] = [
   { name: '人才招聘网', url: 'https://zp.tongji.edu.cn/' },
   { name: '文明网', url: 'https://tjwm.tongji.edu.cn/', alias: '文明校园' },
   { name: '博物馆', url: 'https://museum.tongji.edu.cn/' },
+  { name: '教职工活动平台', url: 'https://pw.tongji.edu.cn/', alias: '工会票务' },
+  { name: '校园网自助服务平台', url: 'https://net.tongji.edu.cn/' },
+  { name: '财务综合服务系统', url: 'http://cwc.tongji.edu.cn/', alias: '报账 报销 项目授权' },
+  {
+    name: '缴费平台',
+    url: 'https://paycwc.tongji.edu.cn/payment',
+    alias: '财务 学费 住宿费',
+    priority: 1,
+  },
   {
     name: '创新创业平台',
     url: 'https://cxcy.tongji.edu.cn/',
@@ -65,7 +72,6 @@ export const manualMaintainedData: RootItem[] = [
     name: '社会实践管理平台',
     url: 'https://shsj.tongji.edu.cn/',
     alias: '思政 实践报告 小论文 提交',
-    priority: 1,
   },
   {
     name: '图书馆空间预约系统',
@@ -75,6 +81,18 @@ export const manualMaintainedData: RootItem[] = [
       { name: '座位预约', url: 'https://space.tongji.edu.cn/h5/#/SeatScreening/1' },
     ],
     priority: 2,
+  },
+  {
+    name: '智慧体育',
+    url: 'https://ty.tongji.edu.cn/phone/#/indexPortrait',
+    alias: '体测二维码',
+    children: [
+      {
+        name: '体测成绩查询',
+        url: 'https://ty.tongji.edu.cn/phone/#/comprehensive/physicalLearningComprehensive',
+      },
+    ],
+    priority: 1,
   },
   {
     name: '同济后勤',

@@ -49,6 +49,7 @@ const blacklist = [
   '同济云盘',
   '体育场馆预约',
   '同济WPS 356教育版激活',
+  '上网密码修改（仅限tj开头的上网账号）',
 ]
 
 function getUrl(item: All.ServiceItem): string {
