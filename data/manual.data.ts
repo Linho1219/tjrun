@@ -55,7 +55,14 @@ export const manualMaintainedData: RootItem[] = [
   {
     name: '创新创业平台',
     url: 'https://cxcy.tongji.edu.cn/',
-    alias: '双创 大创 大学生创新训练计划',
+    children: [
+      { name: '大学生学科竞赛管理系统', url: 'https://cxcy.tongji.edu.cn/xkjs' },
+      {
+        name: '大学生创新训练计划管理系统',
+        url: 'https://cxcy.tongji.edu.cn/tjdxcx/',
+        alias: 'SITP',
+      },
+    ],
   },
   {
     name: '移动门户',
